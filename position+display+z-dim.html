@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .layer1{
+            height: 5000px;
+            background-color: green;
+        }
+        .layer2{
+            background-color: black;
+            position: fixed;
+            top:0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display:none;
+            z-index:9;
+            opacity: 0.5;
+        }
+        .layer3{
+            display:none;
+            z-index:10;
+            position: fixed;
+            top: 50%;
+            left:50%;
+            margin-left: -250px;
+            margin-top: -200px;
+            background-color:white;
+            height: 400px;
+            width:500px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0 auto">
+
+    <div class="layer1">asdfasdf</div>
+
+    <div class="layer2"></div>
+
+    <div class="layer3">
+
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+
+    </div>
+</body>
+</html>

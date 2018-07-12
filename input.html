@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input_study</title>
+</head>
+<body>
+    <p>用户登录</p>
+    <form action="" method="post">
+        <div>
+            <!--inpuut标签一定要放在 form 表单标签下-->
+            用户名：<input type="text" name="username" value=""/>
+            <br/>
+            密&nbsp&nbsp&nbsp码：<input type="password" name="password" value=""/>
+            <br/>
+            <input type="submit" value="登录" />
+        </div>
+    </form>
+
+    <br/>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <div >
+            <p>请选择性别：</p>
+            <input type='radio' name="sex" value="1" checked="checked"/> 男
+            <input type='radio' name="sex" value="2"/> 女
+
+            <p>爱好</p>
+            <input type='checkbox' name="hobby" value="1"/>  足球
+            <input type='checkbox' name="hobby" value="2"/>  篮球
+            <input type='checkbox' name="hobby" value="3" checked="checked"/>  音乐
+
+             <p>技能</p>
+            <input type='checkbox' name="skill" value="1"/>  足球
+            <input type='checkbox' name="skill" value="2"/>  篮球
+            <p>
+                <input type="submit" value="提交" />
+                <!--对所在的form表单内容进行重置-->
+                <input type="reset" value="重置" />
+
+            </p>
+        </div>
+
+        <div>
+            <p>上传文件：</p>
+            <input type="file" name="filename"/> <br/>
+            <input type="submit" value="上传文件"/>
+        </div>
+
+
+        <!--多行文本输入-->
+        <div>
+            <p>多行数据输入：</p>
+            <textarea name="texts">请输入文本内容：</textarea> <br/>
+            <input type="submit" value="提交内容"/>
+        </div>
+
+        <div>
+            <p>下拉框</p>
+            <select name="city">
+                <option value="1">北京</option>
+                <option value="2">上海</option>
+                <option value="3" selected="selected">重庆</option>
+            </select>
+            <!--multiple实现下拉框多选 -->
+            <select name="city" multiple="multiple">
+                <option value="1">北京</option>
+                <option value="2">上海</option>
+                <option value="3" selected="selected">重庆</option>
+            </select>
+
+        </div>
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>

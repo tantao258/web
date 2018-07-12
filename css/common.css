@@ -1,0 +1,22 @@
+#i1{
+    background-color: rebeccapurple;
+    height: 42px
+}
+.c1{
+    background-color: rebeccapurple;
+    height: 42px
+}
+.c2 div{
+    background-color: rebeccapurple;
+    height: 42px
+}
+div{
+    background-color: yellowgreen;
+    height: 42px
+}
+span div{
+    background-color: royalblue;
+    height: 42px
+}
+input[type="text"]{background-color: royalblue; height: 42px}
+.c1[type="text"]{background-color: #804040; height: 42px}
